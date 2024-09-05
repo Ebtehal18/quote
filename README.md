@@ -23,5 +23,5 @@ A simple quote generator web application that displays a random quote each time 
 
 ## Live Demo
 
-You can try the live demo [here](#).
+You can try the live demo [here](#https://ebtehal18.github.io/quote/).
 
