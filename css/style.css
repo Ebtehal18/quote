@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", system-ui;
+}
+body,html{
+    overflow-x: hidden;
+}
+main{
+background-image:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)) ,url(../images/bg.webp);
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center center;
+}
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+h1{
+font-weight: 700;
+font-size: 5rem;
+color: rgb(8, 8, 8);
+}
+p{
+    text-align: center;
+    font-size: 2.1875rem;
+    font-weight: 400;
+    margin: 2.1875rem 0;
+    color: rgb(8, 8, 8);
+}
+
+.btn{
+    font-size: .9375rem;
+    font-weight: 400;
+    width: 15.625rem;
+    height: 5rem;
+    border: 2px solid   rgba(230, 110, 19, 0.9);
+    background-color: transparent;
+    border-radius: .3125rem;
+    color: white;
+    transition: all 0.5s;
+    color: rgb(8, 8, 8);
+}
+.btn:hover{
+    background-color:  rgba(230, 110, 19, 0.9);
+    color: white;
+}
+#quote{
+    display: none;
+    max-width: 55.3125rem;
+    text-align: center;
+    font-family: "Eagle Lake", system-ui;
+font-style: italic;
+    color:  rgba(234, 142, 62, 0.949);
+}
+#author{
+    color: rgb(8,8,8);
+    font-weight: 400;
+    font-size: 1.5625rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    margin: 0;
+}
+#author::after{
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    left: -50px;
+    content: '';
+    background-color: rgba(230, 110, 19, 0.9);
+}
+#author::before{
+    right: -50px;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    content: '';
+    background-color: rgba(230, 110, 19, 0.9);
+}
